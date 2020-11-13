@@ -1,0 +1,10 @@
+•  Bu komudu botunuzun sürümü kaç ise ona göre alıp main.js / bot.js /index.js veyahut özelisim.js tarzı açtığınız bot klasörünüzün içine girip yapıştırıp düzenleyiniz.
+
+
+• V.11 için 
+client.on('guildMemberAdd', member => {
+  member.addRoles(`rol.id`)});
+
+• V.12 için 
+client.on('guildMemberAdd', member => {
+  member.roles.add(`rol.id`)});
