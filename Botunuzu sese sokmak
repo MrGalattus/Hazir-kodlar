@@ -1,0 +1,16 @@
+• v11
+client.on('ready', async message => {
+    const channel = client.channels.get("kanal.id");
+  if (!channel) return console.error("Kanal 'ID' girilmemiş.");
+  channel.join().then(connection => {
+    console.log("Başarıyla bağlanıldı.");
+  }).catch(e => {
+    console.error(e);
+  });
+});
+
+• v12 
+client.on("ready", async () => {
+  let botVoiceChannel = client.channels.cache.get("kanalid");
+  if (botVoiceChannel) botVoiceChannel.join().catch(err => console.error("Bot ses kanalına bağlanamadı!"));
+});
