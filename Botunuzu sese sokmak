@@ -1,3 +1,5 @@
+•  Bu komudu botunuzun sürümü kaç ise ona göre alıp main.js / bot.js /index.js veyahut özelisim.js tarzı açtığınız bot klasörünüzün içine girip yapıştırıp düzenleyiniz.
+
 • v11
 client.on('ready', async message => {
     const channel = client.channels.get("kanal.id");
@@ -11,6 +13,6 @@ client.on('ready', async message => {
 
 • v12 
 client.on("ready", async () => {
-  let botVoiceChannel = client.channels.cache.get("kanalid");
+  let botVoiceChannel = client.channels.cache.get("kanal.id");
   if (botVoiceChannel) botVoiceChannel.join().catch(err => console.error("Bot ses kanalına bağlanamadı!"));
 });
