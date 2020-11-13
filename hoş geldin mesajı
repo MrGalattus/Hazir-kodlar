@@ -1,0 +1,50 @@
+• Hoşgeldin mesajı v12 bir kaç type 
+
+
+---Güvenli güvensiz içeriği bulunan bir tip -----
+client.on('guildMemberAdd', async member => { //id yazan yere verilecek rol (unregistered)
+  let member2 = member.user 
+  let zaman = new Date().getTime() - member2.createdAt.getTime()
+  var user = member2 
+  var hesapguvenlik = [];
+  if(zaman < 604800000) {
+  hesapguvenlik = 'Hesap Güvenilir Gözükmüyor.'
+  } else {
+  hesapguvenlik = `Hesap Güvenilir.`}require("moment-duration-format");
+   let zaman1 = new Date().getTime() - user.createdAt.getTime()
+   const gecen = moment.duration(zaman1).format(` YY **[Yıl,]** DD **[Gün,]** HH **[Saat,]** mm **[Dakika,]** ss **[Saniye]**`) 
+   let dbayar = await db.fetch(`dbayar${member.guild.id}`)
+   let message = member.guild.channels.cache.find(x => x.id === `767367928705450044`) //id yazan kısma kanal id'si [orn: register-chat]
+    const log = new Discord.MessageEmbed()
+   .setTitle("THE CLUB" )
+     .setDescription(`Sunucumuza Hoş geldin ${member} 
+  Seninle Beraber **${message.guild.memberCount}** Kişiyiz.
+  Kayıt Edilmek İçin Odalardan Birisinde Teyit Vermen Yeterli.
+  <@&KAYITÇI ROL ID> Rolündeki Yetkililer Yardımcı Olacaktır.
+  Hesabın: ${gecen} Önce Kurulmuş. 
+  Hesap Durumu: **${hesapguvenlik}**
+  `)
+  .setColor('PURPLE')
+  message.send(log)
+   
+           });
+           
+------- gifli mifli alevli hoş geldin mesajı ---------
+  client.on('guildMemberAdd', member => {
+    let batu = member.user.id
+    const logChannel = member.guild.channels.cache.find(channel => channel.name === "atacağı kanalın adı");
+    member.guild.fetchInvites().then(guildInvites => {
+      let embed3 = new Discord.MessageEmbed()
+                     .setTitle(`Burak`)
+                     .addField('Prof. Burak Arslan',
+                     ` \n Evsiz \n\n Sayın <@${member.user.id}>; \n\n • Burak as.`)
+                     .setImage("https://cdn.discordapp.com/attachments/764976581902204928/774410658883043378/ezgif.com-gif-maker_8.gif")
+                     .setColor('0x1f1d1d')
+                     .setTimestamp()
+                     .setFooter(client.user.username, client.iconURL)
+                     client.channels.cache.get("atacağı.kanalın.idsi").send(`Merhabalar <@${member.user.id}>  Hoş Geldin.`)
+                     client.channels.cache.get("atacağı.kanalın.idsi").send(embed3)})
+                    
+                    });;
+
+daha örnekler eklenecektir ...
