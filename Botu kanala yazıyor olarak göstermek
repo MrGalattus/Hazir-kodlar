@@ -9,3 +9,4 @@ client.channels.cache.get('kanal id niz buraya').startTyping()
 client.on('ready', ()=>{
 client.channels.get('kanal id niz buraya').startTyping()
 })
+ 
