@@ -1,0 +1,11 @@
+~ Discord.js v12 versionu için 
+
+client.on('ready', ()=>{
+client.channels.cache.get('kanal id niz buraya').startTyping()
+})
+
+
+~ Discord.js v11 versionu için
+client.on('ready', ()=>{
+client.channels.get('kanal id niz buraya').startTyping()
+})
